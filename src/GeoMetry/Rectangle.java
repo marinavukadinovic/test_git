@@ -1,24 +1,30 @@
 package GeoMetry;
 
-public abstract class Rectangle {
+public class Rectangle extends Shapes{
+	
+    Coordinate point1;
+    Coordinate point2;
+ 
 
-	private double lenght;
-	private double width;
-	
-	
-	public double getLenght() {
-		return lenght;
+    public Rectangle(Coordinate point1, Coordinate point2) {
+    	super();
+        this.point1 = point1;
+        this.point2 = point2;
+    }
+
+    
+    /*
+     * Calculation of circumference of Rectangle
+     */
+
+	public double calculateCircumference() {
+		double length = Math.abs(point2.getX() - point1.getX());
+		double width = Math.abs(point2.getY() - point1.getY());
+		double circumference = 2 *length + 2*width;
+		return circumference;
 	}
-	public void setLenght(double lenght) {
-		this.lenght = lenght;
-	}
-	public double getWidth() {
-		return width;
-	}
-	public void setWidth(double width) {
-		this.width = width;
-	}
-	
-	
-	
+    
+    
+    
+    
 }
