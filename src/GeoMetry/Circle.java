@@ -37,5 +37,21 @@ public class Circle extends Shapes{
 		this.radius = radius;
 	}
 
+	/*
+	 * Calculation of the Radius of Circle
+	 */
+	public double calculateRadius(Coordinate middle, Coordinate radiusPoint) {
+        double radius = Math.sqrt(Math.pow(radiusPoint.getX() - middle.getX(), 2) +
+					Math.pow(radiusPoint.getY() - middle.getY(), 2));
+        return radius;
+    }
+
+	
+	
+	
+	
+	
+	
+	
 
 }
