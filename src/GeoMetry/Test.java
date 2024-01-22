@@ -9,5 +9,6 @@ public class Test {
 		Coordinate c2 = new Coordinate(3, 5);
 		Coordinate c3 = new Coordinate(9, 2);
 	}
-		
-	}
+
+}
+    
