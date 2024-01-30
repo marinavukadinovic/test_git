@@ -53,7 +53,7 @@ import java.util.Set;
 	        }
 
 	        return totalArea;
-
+, 
 	    }
 
 		public double calculateTotalPerimeter() {
@@ -82,7 +82,7 @@ import java.util.Set;
 
 			double maxArea = 0.0;
 
-			for (Shape shape : shapes) {
+			for (Shape shape : shape) {
 
 	            double area = shape.calculateArea();
 
@@ -90,12 +90,32 @@ import java.util.Set;
 
 	            	maxArea = area;
 
-	            }
+	            
 
-	        } 
+	     public void printAllShapes() {
 
-	}
-	 
-	 
-	    }
- 
+	    		if (shape.isEmpty()) {
+
+	    		            System.out.println("Die Gruppe enthält keine Formen.");
+
+	    		       } else {
+
+	    		        	 System.out.println("Formen in der Gruppe:");
+
+	    		             for (Shapes shape : shapes) {
+
+	    		                 System.out.println(" - Flächeninhalt: " + shape.getArea());
+
+	    		             }
+
+	    		         }
+
+	    		       }
+
+	    			}
+
+	    		 
+
+	     
+
+		
