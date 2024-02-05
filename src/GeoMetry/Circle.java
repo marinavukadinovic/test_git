@@ -66,7 +66,9 @@ public class Circle extends Shapes{
 		return area;
 	}
 	
+
 }
+//Flächeninhalt mit MIN weil man immer mit dem kleinsten Wert anfangen will
 	
 	
 	

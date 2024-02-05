@@ -24,7 +24,15 @@ public class Rectangle extends Shapes{
 		return circumference;
 	}
     
+	/*
+	 * Calculation of  area of Rectangle
+	 */
+
+	public double calculateArea() {
+		double length = Math.abs(point2.getX() - point1.getX());
+		double width = Math.abs(point2.getY() - point1.getY());
+		double area = length *width;
+		return area;
     
-    
-    
+	}
 }

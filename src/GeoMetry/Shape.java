@@ -12,5 +12,22 @@ public abstract class Shape {
 	public ArrayList<Shape> getShape() {
 		return shape;
 	}
-	
+
+	public void setShape (ArrayList<Shape> shape) {
+		this.shape = shape;
+	}
+	public double getCircumference() {
+		return circumference;
+	}
+	public void setCircumference(double circumference) {
+		this.circumference = circumference;
+	}
+	public double getArea() {
+		return area;
+	}
+	public void setArea(double area) {
+		this.area = area;
+	}
+ 
+}
 	
