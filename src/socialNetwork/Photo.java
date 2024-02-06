@@ -1,5 +1,31 @@
 package socialNetwork;
 
-public class Photo {
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 
+public class Photo extends Newsfeed{
+	
+	private String name;
+	private String dataName;
+	private String photo;
+	private LocalDateTime Date;
+	private String like;
+	private String comment;
+	
+	public Photo ()
+		super();
 }
+
+	public Photo(ArrayList<Newsfeed> newsfeed, String title, String content, String name, 
+			String dataName, String photo, LocalDateTime Date, String like, String comment) {
+		super(newsfeed, title, content);
+		
+		this.name = name;
+		this.dataName = dataName;
+		this.photo = photo;
+		this.Date = Date;
+		this.like = like;
+		this.comment = comment;
+		
+	}
+
