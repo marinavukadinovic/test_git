@@ -5,14 +5,12 @@ import java.util.ArrayList;
 
 public class Photo extends Newsfeed{
 	
-	private String name;
-	private String dataName;
-	private String photo;
-	private LocalDateTime Date;
-	private String like;
-	private String comment;
 	
-	public Photo ()
+	private String dataName;
+	
+	
+	
+	public Photo () {
 		super();
 }
 
@@ -23,9 +21,10 @@ public class Photo extends Newsfeed{
 		this.name = name;
 		this.dataName = dataName;
 		this.photo = photo;
-		this.Date = Date;
+		this.Date = Date;		
 		this.like = like;
 		this.comment = comment;
-		
 	}
-
+	
+	
+	}

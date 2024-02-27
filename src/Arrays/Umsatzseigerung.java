@@ -8,7 +8,15 @@ public class Umsatzseigerung {
 	private static int JumpCounter;
 	private static int[] dailyGains = new int[31]; 
 	
-	
+	 public static void main(String[] args) {
+	        dailyGains[0] = 1000;
+	        dailyGains[1] = 2000;
+	        dailyGains[2] = 500;
+	        dailyGains[3] = 9000;
+	        dailyGains[4] = 9010;
+	        
+	 }
+
 
     public static int count5PercentJumps(int[] gains) {
     for(int i = 0; i >= dailyGains.length; i++) {
