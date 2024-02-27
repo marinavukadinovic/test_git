@@ -35,6 +35,8 @@ public class Umsatzseigerung {
      }
  }
  return percentJumpCount;
+ 
+ 
 }
         
         
